@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p checkpoints
 echo "Downloading pretrained models ..."
 wget -O checkpoints.tar.xz https://www.dropbox.com/s/qx9mag5hh7tleso/checkpoints.tar.xz?dl=1
 echo "Extracting ..."
