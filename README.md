@@ -9,9 +9,9 @@
 `./download.sh`
 
 ## Acknowledgements
-[Encoder for Editing](https://github.com/omertov/encoder4editing)
-[DensePose](https://github.com/facebookresearch/DensePose)
-[StyleGAN2](https://github.com/NVlabs/stylegan2-ada-pytorch)
+[Encoder for Editing](https://github.com/omertov/encoder4editing) \
+[DensePose](https://github.com/facebookresearch/DensePose) \
+[StyleGAN2](https://github.com/NVlabs/stylegan2-ada-pytorch) \
 [CLIP](https://github.com/openai/CLIP)
 
 ## Details coming soon!
