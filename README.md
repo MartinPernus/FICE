@@ -8,10 +8,19 @@
 ## Download models
 `./download.sh`
 
-## Acknowledgements
-[Encoder for Editing](https://github.com/omertov/encoder4editing) \
-[DensePose](https://github.com/facebookresearch/DensePose) \
-[StyleGAN2](https://github.com/NVlabs/stylegan2-ada-pytorch) \
+## Code acknowledgements
+[Encoder for Editing](https://github.com/omertov/encoder4editing) 
+
+[DensePose](https://github.com/facebookresearch/DensePose) 
+
+[StyleGAN2](https://github.com/NVlabs/stylegan2-ada-pytorch) 
+
 [CLIP](https://github.com/openai/CLIP)
+
+## Sponsor acknowledgements
+Supported in parts by the Slovenian Research Agency ARRS through the Research Programme P2-0250(B) Metrology and Biometric System, the ARRS Project J2-2501(A) DeepBeauty and the ARRS junior researcher program.
+
+<img src=imgs/ARRSLogo.png width="400">
+
 
 ## Details coming soon!
