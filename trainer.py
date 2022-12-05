@@ -149,7 +149,6 @@ class Trainer():
             clip_sim = self.model.clip_similarity(imgs_gen, self.text_feats)
             loss_dict['clip'] =  clip_loss_fn(clip_sim)
 
-
             loss_dict_scaled = {k: loss_dict[k]*self.opt.weights_dict[k] for k in loss_dict}
             loss = sum(loss_dict_scaled.values())
 
