@@ -23,6 +23,3 @@ Supported in parts by the Slovenian Research Agency ARRS through the Research Pr
 
 <img src=imgs/ARRSLogo.png width="400">
 
-
-## Details coming soon!
->>>>>>> a35a654c420f0cf25eb8703d70eee3af479a5991
