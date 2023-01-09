@@ -6,10 +6,15 @@
 ## Installation
 `cat requirements.txt | xargs -n 1 -L 1 pip install`
 
-## Download models
+## Download Models
 `./download.sh`
 
-## Code acknowledgements
+## Example Usage
+`python main.py --input_dir imgs/input --description "long sleeve silk crepe de chine shirt featuring graphic pattern printed in tones of blue"`
+
+The `--input_dir` argument specifies directory of images (256x256 resolution) to be edited.
+
+## Code Acknowledgements
 [Encoder for Editing](https://github.com/omertov/encoder4editing) 
 
 [DensePose](https://github.com/facebookresearch/DensePose) 
@@ -18,7 +23,7 @@
 
 [CLIP](https://github.com/openai/CLIP)
 
-## Sponsor acknowledgements
+## Sponsor Acknowledgements
 Supported in parts by the Slovenian Research Agency ARRS through the Research Programme P2-0250(B) Metrology and Biometric System, the ARRS Project J2-2501(A) DeepBeauty and the ARRS junior researcher program.
 
 <img src=imgs/ARRSLogo.png width="400">
