@@ -18,7 +18,7 @@ def predict_w(img):
     e4e = e4e.to(img.device)
     w = e4e(img)
     return w
-    
+
 def img_loss_fn(im1, im2):
     loss = F.mse_loss(im1, im2, reduction='none')
     loss = loss.mean((1,2,3)).sum()
@@ -72,7 +72,7 @@ class Model(nn.Module):
     def deeplab_seg_head(self, imgs):
         _, _, head = self.segnet(imgs)
         return head
-        
+
 class Trainer():
     def __init__(self, opt={}):
         self.opt = self.set_defaults(opt)
@@ -84,9 +84,9 @@ class Trainer():
                         'shape': 10,
                         'head_shape': 1,
                         'w_delta': 1}
-                                            
+
         opt_default = dict(weights_dict=weights_dict,
-                           lr=5e-2,  
+                           lr=5e-2,
                            n_iters=500,
                            clip_model='RN50x4')
 
@@ -109,11 +109,11 @@ class Trainer():
 
         with torch.no_grad():
             text_feats = self.model.clip.encode_text(sentence).view(1, -1)   # check the dimensionality
-            shape_real = self.model.densenet_forward(imgs_batch)   
+            shape_real = self.model.densenet_forward(imgs_batch)
             _, body_mask, head_mask = self.model.segnet(imgs_batch)
 
         self.shape_real = shape_real
-        self.img_mask = 1 - body_mask   
+        self.img_mask = 1 - body_mask
 
         self.blend_mask = 1 - head_mask
         self.text_feats = text_feats
@@ -148,7 +148,6 @@ class Trainer():
 
             clip_sim = self.model.clip_similarity(imgs_gen, self.text_feats)
             loss_dict['clip'] =  clip_loss_fn(clip_sim)
-
 
             loss_dict_scaled = {k: loss_dict[k]*self.opt.weights_dict[k] for k in loss_dict}
             loss = sum(loss_dict_scaled.values())
